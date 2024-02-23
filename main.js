@@ -88,7 +88,7 @@ scene.background = new THREE.Color("#433473");
 
 const GLTFloader = new GLTFLoader();
 
-GLTFloader.load("/3dmodelviewer/ratCharacter.glb", function (gltf) {
+GLTFloader.load("./ratCharacter.glb", function (gltf) {
     const geometry = new THREE.CircleGeometry( 5, 32 ); 
     geometry.rotateX(-1.57);
     const material = new THREE.MeshBasicMaterial( { color: 0x2e1f4d } ); 
