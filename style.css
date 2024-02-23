@@ -1,0 +1,45 @@
+body{
+    background-color: #2e1f4d;
+    display: flex;
+    justify-content: center;
+}
+.model_viewer{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: aqua;
+}
+.viewer{
+    border: 3px solid black;
+    background-color: red;
+    width: 25%;
+    aspect-ratio: 0.8;
+}
+.model_button{
+    float: left;
+    display: block;
+    width: 25%;
+    aspect-ratio: 1;
+    border: 3px solid black;
+    text-align: center;
+    background-size: cover;
+    background-color: #6b6b99;
+    margin: 0;
+}
+
+.model_button:focus{
+    background-color:#a3a7bf;
+    outline: 0;
+}
+    
+#Idle{
+    background-image: url("idleIcon.png");
+}
+#Running{
+    background-image: url("runningIcon.png");
+}
+#Falling{
+    background-image: url("fallingIcon.png");
+}
+#Rising{
+    background-image: url("jumpingIcon.png");
+}
