@@ -122,12 +122,14 @@ function animate() {
  
 }
 document.getElementById(currentType).style.backgroundColor = "#a3a7bf";
+window.alert("Idle");
 
 function ChangeAnimation(type) {
     if (type == currentType) return;
     document.getElementById(currentType).style.backgroundColor = "#6b6b99";
     currentType = type;
     document.getElementById(currentType).style.backgroundColor = "#a3a7bf";
+    window.alert(type);
     action.stop();
     clip = THREE.AnimationClip.findByName(model.animations, type);
     action = mixer.clipAction(clip);
